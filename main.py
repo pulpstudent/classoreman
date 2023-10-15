@@ -25,8 +25,9 @@ import random
 db_emoji_1 = { 0 : "📍" , 1 : "🖋️" , 2 : "📌" , 3 : "🧷" , 4 : "⭕️" , 5 : "🌀" , 6 : "🔷" , 7 : "🔶" , 8 : "🔔" , 9 : "💬" , 10 : "🟡" , 11 : "🔵" , 12 : "🟢"}
 db_emoji_2 = { 0 : "🔍" , 1 : "👨‍💻" , 2 : "🔥" , 3 : "🎯" , 4 : "💣" , 5 : "📌" , 6 : "🔰" , 7 : "🌀" , 8 : "🟣" , 9 : "⭕️" , 10 : "" , 11 : "" , 12 : ""}
 db_cta_z = { 0 : "💬نظر شما در این مورد چیه؟" , 1 : "💬نظرتو کامنت کن برامون" , 2 : "💬نظرتو کامنت کن" , 3 : "💬نظرتو چیه؟ کامنتش کن" , 4 : "" , 5 : "" , 6 : "" , 7 : "" , 8 : "" , 9 : "" , 10 : "" , 11 : "" , 12 : "" , 13 : "" , 14 : "" , 15 : "" , 16 : "" , 17 : ""}
+counter0 = 0
 
-time.sleep(5)
+time.sleep(60)
 
 
 while True : 
@@ -87,14 +88,13 @@ while True :
         "caption" : emoji_1 + title + "\n" + "\n" + emoji_2 + description + "\n" + "\n" + cta_z + "\n" +"#خارج_از_کنکور" + "\n" + "---------------" + "\n" + "🆔@classoreman" + "\n" + "🌐classoreman.com" 
     }
 
-    resp_update = requests.get(update_url, data= parameters)
-    print(resp_update.text)
+    if counter0 > 0 : 
+        resp_update = requests.get(update_url, data= parameters)
+        print(resp_update.text)
+        counter0 += 1 
+    else : 
+        counter0 += 1 
 
 
 
     time.sleep(86400)
-
-
-
-
-
