@@ -10,7 +10,7 @@ update_url = 'https://api.telegram.org/bot6453932148:AAFeB8vjo2ly_UCWlAaDHgS3VhQ
 parameters = {
       "chat_id" : "-1001658066382" ,
       "photo" : "https://gameato.ir/wp-content/uploads/2022/11/مگ.png" ,
-      "caption" : "\n" + "\n" + "Changes : " + "\n" + "1.RUN" + "\n" + "#ggdevs"
+      "caption" : "\n" + "\n" + "Changes : " + "\n" + "1.RUN2.2" + "\n" + "#ggdevs"
  }
 
 resp_update = requests.get(update_url, data= parameters)
