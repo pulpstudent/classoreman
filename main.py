@@ -28,7 +28,7 @@ db_cta_z = { 0 : "💬نظر شما در این مورد چیه؟" , 1 : "💬ن
 counter0 = 0
 
 
-
+time.sleep(7200)
 
 while True : 
     r = requests.get("https://digiato.com/topic/science")
