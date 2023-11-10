@@ -5,7 +5,7 @@ import requests
 update_url = 'https://api.telegram.org/bot6453932148:AAFeB8vjo2ly_UCWlAaDHgS3VhQpvfDdAQ4/sendPhoto'
 parameters = {
       "chat_id" : "-1001658066382" ,
-      "photo" : "https://gameato.ir/wp-content/uploads/2022/11/مگ.png" ,
+      "photo" : "" ,
       "caption" : "\n" + "\n" + "Changes : " + "\n" + "1.RUN2.2" + "\n" + "#ggdevs"
 }
 
