@@ -5,7 +5,7 @@ import requests
 update_url = 'https://api.telegram.org/bot6453932148:AAFeB8vjo2ly_UCWlAaDHgS3VhQpvfDdAQ4/sendMessage'
 parameters = {
       "chat_id" : "-1001658066382" ,
-      "text" : "\n" + "\n" + "Changes : " + "\n" + "111.RUN2.2" + "\n" + "#ggdevs" ,
+      "text" : "https://divar.ir/v/پژو-206-تیپ-۲-مدل-۱۳۸۲_سواری-و-وانت_تهران_مرزداران_دیوار/QZNVFHCZ" ,
       "parse_mode" : "markdown"
 }
 
