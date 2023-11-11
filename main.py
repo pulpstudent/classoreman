@@ -3,13 +3,20 @@ from bs4 import BeautifulSoup as bs
 import time
 
 
+time.sleep(5400)
+update_url = 'https://api.telegram.org/bot6453932148:AAFeB8vjo2ly_UCWlAaDHgS3VhQpvfDdAQ4/sendPhoto'
+parameters = {
+      "chat_id" : "-1001658066382" ,
+      "photo" : "https://gameato.ir/wp-content/uploads/2022/11/مگ.png" ,
+      "caption" : "\n" + "\n" + "Changes : " + "\n" + "WTF" + "\n" + "#ggdevs"
+}
 
 while True : 
     # night_sleep
-    time.sleep(1)
+    time.sleep(43200)
     main_dic = []
     counter = 1
-    while counter % 5 != 0  : 
+    while counter % 7 != 0  : 
         r = requests.get("https://divar.ir/s/tehran/game-consoles?goods-business-type=personal&price=1000000-")
         soup = bs(r.text , "html.parser")
         product_soup = soup.find("div" ,class_= "browse-post-list-f3858").find_all("picture")
@@ -35,5 +42,6 @@ while True :
             # breath_sleep
             time.sleep(10)
         # main_sleep
-        time.sleep(20)
+        time.sleep(7200)
                 
+   
