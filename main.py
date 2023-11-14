@@ -1,3 +1,20 @@
+
+# update
+# https://api.telegram.org/bot6453932148:AAFeB8vjo2ly_UCWlAaDHgS3VhQpvfDdAQ4/getUpdates 
+
+# id_main = -1001548874589
+# id_test = -1001658066382
+
+# update_url = 'https://api.telegram.org/bot6453932148:AAFeB8vjo2ly_UCWlAaDHgS3VhQpvfDdAQ4/sendPhoto'
+# parameters = {
+      # "chat_id" : "-1001658066382" ,
+      # "photo" : "https://gameato.ir/wp-content/uploads/2022/11/مگ.png" ,
+      # "caption" : "\n" + "\n" + "Changes : " + "\n" + "1.RUN2.2" + "\n" + "#ggdevs"
+# }
+
+# resp_update = requests.get(update_url, data= parameters)
+# print(resp_update.text)
+
 import requests
 from bs4 import BeautifulSoup as bs 
 import time
@@ -10,14 +27,16 @@ parameters = {
       "caption" : "\n" + "\n" + "Changes : " + "\n" + "WTF" + "\n" + "#ggdevs"
 }
 
+resp_update = requests.get(update_url, data= parameters)
+
 # define letter_dic
 letter_dic = {}
 
 time.sleep(10)
 
 while True : 
-    # night_sleep
-    time.sleep(43200)
+    # night_sleep -> 43200
+    time.sleep(1)
 
     # define list 
     pic_list = []
@@ -106,7 +125,7 @@ while True :
             time.sleep(10)
 
         counter += 1
-        # main_sleep
+        # main_sleep -> 7200 
         time.sleep(7200)
                 
    
